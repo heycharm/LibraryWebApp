@@ -22,6 +22,7 @@ Display.prototype.clear = function () {
   libraryForm.reset();
 };
 
+//We are checking that the value is greater than 3 then only that will be added.
 Display.prototype.validate = function (book) {
   if (book.name.length < 3 || book.author.length < 3) {
     return false;
